@@ -1,5 +1,5 @@
 import torch
-
+import numpy as np
 # random
 
 x = torch.randn(3,requires_grad=True)
@@ -34,5 +34,18 @@ print(x.grad)
 example
 x.requires_grad_(False)
 """
+
+
+# 2) torch.tensor()
+
+xx = torch.tensor([1,2,3],dtype=torch.float32)
+
+print(xx)
+
+# torch.ones
+
+yy= torch.ones([3,3],dtype=torch.float32)
+
+print(yy)
 
 
